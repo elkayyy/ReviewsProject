@@ -1,0 +1,113 @@
+.main-container-commend {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+
+}
+
+.commend-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    gap: 2em;
+    padding: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+}
+
+.commend-container-inner{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 2em;
+
+}
+
+.commend-container-inner-right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    gap: 2em;
+    color: rgb(143, 200, 247);
+    border-left: 1px solid rgba(255, 255, 255, 0.548);
+}
+
+.about-the-trip{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    background-color: rgba(116, 116, 116, 0.527);
+}
+
+
+.commend-name {
+    color: white;
+}
+
+.commend-title {
+    font-size: x-large;
+    color: white;
+}
+
+.commend-text {
+    color: white;
+    border-bottom: 2px solid rgba(167, 167, 167, 0.123);
+    
+}
+
+.commend-rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.commend-item1{
+    color: white;
+}
+
+.pagination-component {
+    display: flex;
+    justify-content: center;
+    
+}
+.pagination-main{
+    border: 1px solid rgba(167, 167, 167, 0.123);
+    width: 35%;
+    
+}
+
+.filter-main {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-left: 1%;
+  
+}
+
+.filter-title {
+    font-size: larger;
+}
+
+
+@media (max-width: 550px) {
+    .commend-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+    }
+
+    .commend-container-inner, .commend-container-inner-right {
+        border: none;
+        width: 100%;
+    }
+
+    .commend-container-inner-right {
+        border-top: 1px solid rgba(255, 255, 255, 0.548);
+       
+    }
+  }

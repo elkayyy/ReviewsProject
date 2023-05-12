@@ -1,0 +1,31 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1%;
+
+}
+
+.resort-title {
+        font-size: x-large;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 2%;
+        color: white;
+        
+}   
+
+.main-container-image {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+ 
+}
+
+.image {
+   object-fit: cover;
+   object-position: center;
+   width: 125vmin;
+   height: 45vmin;
+   padding: 1em;
+}

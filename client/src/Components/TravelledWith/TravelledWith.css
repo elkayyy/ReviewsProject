@@ -1,0 +1,65 @@
+.main-container-travelled {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    margin-top: 5%;
+
+}
+
+.travelled-title {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    color: white;
+}
+
+.travelled-items {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 1em;
+    font-size: large;
+    color: white;
+}
+
+.travelled-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+  
+  
+}
+
+
+.travelled-box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.7em;
+    width: 100%;
+ 
+}
+
+.travelled-items-container {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+  
+}
+
+@media (max-width: 860px) {
+    .main-container-travelled {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    .travelled-items-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .travelled-title {
+        font-size: x-large;
+        margin-bottom: 5%;
+    }
+  }
