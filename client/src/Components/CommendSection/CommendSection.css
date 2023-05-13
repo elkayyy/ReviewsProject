@@ -35,6 +35,7 @@
 
 .about-the-trip{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 1em;
     padding: 5%;
@@ -58,6 +59,11 @@
     
 }
 
+.user-name {
+    color: orange;
+    font-size: larger;
+}
+
 .commend-rating {
     display: flex;
     flex-direction: row;
@@ -72,6 +78,9 @@
 .pagination-component {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
     margin-bottom: 5%;
     
 }
@@ -93,6 +102,10 @@
     font-size: larger;
 }
 
+.filter-select{
+    width: 20%;
+   
+}
 
 @media (max-width: 1300px) {
     .commend-container {
@@ -126,12 +139,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1em;
+        gap: 3em;
+        padding-bottom: 50%;
+ 
     }
 
     .filter-main {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
     }
 
     .pagination-main {
