@@ -72,6 +72,7 @@
 .pagination-component {
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
     
 }
 .pagination-main{
@@ -93,21 +94,47 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 1300px) {
     .commend-container {
       width: 100%;
       display: flex;
       flex-direction: column;
   
     }
+    .commend-name {
+        text-align: center;
+    }
+
+    .commend-rating {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 
     .commend-container-inner, .commend-container-inner-right {
         border: none;
         width: 100%;
+        padding: 1%;
     }
 
     .commend-container-inner-right {
         border-top: 1px solid rgba(255, 255, 255, 0.548);
        
+    }
+
+    .pagination-component {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .filter-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination-main {
+        width: 100%;
     }
   }

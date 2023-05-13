@@ -1,7 +1,6 @@
 import './CommendSection.css';
 import { useEffect, useState } from 'react';
 import { Rating } from 'primereact/rating';
-import { Checkbox } from 'primereact/checkbox';
 import { Paginator } from 'primereact/paginator';
 
 
@@ -9,8 +8,9 @@ function CommendSection() {
 
     const [allData, setAllData] = useState({});
     const [first, setFirst] = useState(0);
-    const [rows, setRows] = useState(15);
+    const [rows, setRows] = useState(4);
     const [checkedReviewDate, setCheckedReviewDate] = useState(false);
+    const [checkedTravellDate, setCheckedTravellDate] = useState(false);
 
     useEffect(() => {
         fetch('http://localhost:8080/reviews/')
@@ -21,19 +21,40 @@ function CommendSection() {
             .catch(error => console.error(error));
     }, []);
 
-    const handleChange = () => {
+    useEffect(() => {
+        if (checkedReviewDate || checkedTravellDate) {
+            const sortBy = checkedReviewDate ? 'entryDate' : 'travelDate'; // check which one is ticked (true)
+            const sortedData = [...allData.all];
+            sortedData.sort((a, b) => {
+                const dateA = new Date(a[sortBy]);
+                const dateB = new Date(b[sortBy]);
+                return dateA - dateB;
+            });
+            
+            setAllData({ ...allData, all: sortedData }) 
+        }
+    }, [checkedReviewDate, checkedTravellDate]);
+
+    const handleChangeRD = () => {
+        setCheckedReviewDate(!checkedReviewDate)
+        if(checkedTravellDate) setCheckedTravellDate(false);
         
+    }
+
+    const handleChangeTD = () => {
+        setCheckedTravellDate(!checkedTravellDate)
+        if(checkedReviewDate) setCheckedReviewDate(false);
     }
 
     return (
         <div>
             {allData.all && allData.all.slice(first, first + rows).map((reviewer) => {
+               
                 const texts = Object.values(reviewer.texts);
                 const text = texts[0] || ''; // every text has a specific language written (en,nl,pl etc)
                 const postDate = new Date(reviewer.entryDate).toLocaleDateString(); // Setting the post Date
                 const travelDate = new Date(reviewer.travelDate).toLocaleDateString(); // Setting the travel Date 
-
-
+             
                 return (
                     <div className="main-container-commend" key={reviewer.id}>
 
@@ -93,7 +114,8 @@ function CommendSection() {
                 </div>
                 <div className='filter-main'>
                     <span className="filter-title">Sort by : </span>
-                    <input type='checkbox' value={checkedReviewDate} onChange={() => handleChange()} /> <span className="filter-title">Review Date</span>
+                    <input type='radio' name="ticked" checked={checkedReviewDate} onChange={() => handleChangeRD()} /> <span className="filter-title">Review Date</span>
+                    <input type='radio' name="ticked" checked={checkedTravellDate} onChange={() => handleChangeTD()} /> <span className="filter-title">Travel Date</span>
                    
                 </div>
             </div>
