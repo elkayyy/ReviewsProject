@@ -19,7 +19,6 @@ function AverageRatings() {
 
     return (
         <div className="main-container-ratings">
-            <span className="ratings-title">Accommodation's average ratings</span>
             <div className="rating-items">
                 <div className="rating-left-box"> 
                     <span className="rate-item1">Location ({averageData.aspecsAvg?.location} / 10) <Rating value={averageData.aspecsAvg?.location} readOnly cancel={false} stars={10} />  </span>

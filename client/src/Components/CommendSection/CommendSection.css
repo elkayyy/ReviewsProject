@@ -11,14 +11,16 @@
     width: 70%;
     gap: 2em;
     padding: 1%;
-    border: 1px solid rgba(255, 255, 255, 0.548);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.548);
 }
 
 .commend-container-inner{
     display: flex;
     flex-direction: column;
     width: 70%;
-    gap: 2em;
+    gap: 1em;
+    color: black;
 
 }
 
@@ -28,9 +30,8 @@
     flex-direction: column;
     align-items: center;
     width: 30%;
-    gap: 2em;
-    color: rgb(143, 200, 247);
-    border-left: 1px solid rgba(255, 255, 255, 0.548);
+    gap: 1em;
+    
 }
 
 .about-the-trip{
@@ -38,30 +39,44 @@
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    padding: 5%;
-    border: 1px solid rgba(255, 255, 255, 0.548);
-    background-color: rgba(116, 116, 116, 0.527);
+    padding: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.548);
+    background-color: rgba(205, 221, 255, 0.356);
+    font-size: x-large;
+  
+}
+.svg-logo{
+    transition: transform 0.3s ease; 
+}
+
+.svg-logo:hover {
+    transform: scale(1.1);
 }
 
 
 .commend-name {
-    color: white;
+    font-size: x-large;
 }
+
 
 .commend-title {
-    font-size: x-large;
-    color: white;
+    font-size: xx-large;
+    font-weight:500;
 }
-
 .commend-text {
-    color: white;
-    border-bottom: 2px solid rgba(167, 167, 167, 0.123);
+    font-size: xx-large;
+    border-bottom: 2px solid rgba(167, 167, 167, 0.192);
     
 }
 
 .user-name {
-    color: orange;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
     font-size: larger;
+}
+
+.user-rating{
+    font-size: xx-large;
 }
 
 .commend-rating {
@@ -69,10 +84,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
-}
-
-.commend-item1{
-    color: white;
+    font-size: xx-large;
 }
 
 .pagination-component {
@@ -81,8 +93,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    margin-bottom: 5%;
-    
 }
 .pagination-main{
     border: 1px solid rgba(167, 167, 167, 0.123);
@@ -102,10 +112,7 @@
     font-size: larger;
 }
 
-.filter-select{
-    width: 20%;
-   
-}
+
 
 @media (max-width: 1300px) {
     .commend-container {

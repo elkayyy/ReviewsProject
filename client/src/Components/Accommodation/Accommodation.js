@@ -1,14 +1,22 @@
 import './Accommodation.css';
+import AverageRatings from '../AverageRatings/AverageRatings';
+import TravelledWith from '../TravelledWith/TravelledWith';
 
 function Accommodation() {
     return (
-        <div className="main-container">
-            <h1 className="resort-title">Our vacation resort is so relaxing, you'll forget what day it is and what your boss looks like!</h1>
-            <div className="main-container-image">
-                <img className="image" src="https://images.unsplash.com/photo-1623298371642-416fcc1286d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="A beautiful landscape" />
+        <div>
+            <h1 className="first-title">Worst Accommodation ever existed. Never even think of booking!</h1>
+            <div className="main-container">
+
+                <div className="main-container-inner">
+
+                    <div className="main-container-image">
+                        <img className="image" alt="img" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+                    </div>
+                    <AverageRatings />
+                </div>
             </div>
         </div>
-
     );
 }
 

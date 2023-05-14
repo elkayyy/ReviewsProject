@@ -1,31 +1,62 @@
 .main-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    margin: 1%;
-
+    margin-bottom: 5%;
+    border-bottom: 2px solid rgba(167, 167, 167, 0.192);
 }
 
-.resort-title {
-        font-size: x-large;
-        font-weight: normal;
-        text-align: center;
-        margin-top: 2%;
-        color: white;
-        
-}   
+.main-container-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10em;
+    
+}
+ 
 
 .main-container-image {
     display: flex;
-    justify-content: center;
-    border-bottom: 1px solid rgb(255, 255, 255);
  
 }
 
 .image {
    object-fit: cover;
    object-position: center;
-   width: 125vmin;
-   height: 45vmin;
+   width: 65vmin;
+   height: 35vmin;
    padding: 1em;
 }
+
+.first-title {
+   text-align: center;
+   margin-top: 5%;
+   font-weight: normal;
+}
+
+@media (max-width: 860px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-container-inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.548);
+    }
+
+    .image {
+        object-fit: cover;
+        object-position: center;
+        width: 65vmin;
+        height: 55vmin;
+        padding: 1em;
+     }
+     
+    
+  }
