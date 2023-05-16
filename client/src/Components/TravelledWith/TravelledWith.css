@@ -1,19 +1,16 @@
 .main-container-travelled {
     display: flex;
-    justify-content: center;
-    font-size: larger;
-    margin-bottom: 5%;
-}
-
-.travelled-box1{
-    display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    align-items: center;
 }
 
-.travelled-items{
-    width: 30%;
+.travelled-items-container {
+    display: flex;
+
+    gap: 1em;
+    width: 100%;
 }
+
 
 @media (max-width: 860px) {
     .main-container-travelled {
@@ -26,6 +23,4 @@
     .travelled-items{
         width: 100%;
     }
-
-
-  }
+}
