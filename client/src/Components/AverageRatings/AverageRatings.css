@@ -6,19 +6,23 @@
 .rating-items {
     display: flex;
     flex-wrap: wrap;
-    font-size: x-large;
     gap: 1em;
     color: black;
-
 }
 
 .rating-left-box , .rating-right-box {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    font-size: xx-large;
-    
+    font-size: small;
 }
+
+.title{
+    position: relative;
+    left: 15%;
+    margin-bottom: 3%;
+}
+
 
 @media (max-width: 860px) {
     .main-container-ratings{

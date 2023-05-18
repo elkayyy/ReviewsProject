@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     padding-bottom: 5%;
-
 }
 
 .commend-container{
@@ -39,52 +38,44 @@
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    padding: 10%;
-    border: 1px solid rgba(0, 0, 0, 0.548);
+    padding: 5%;
+    font-size: small;
     background-color: rgba(205, 221, 255, 0.356);
-    font-size: x-large;
-  
-}
-.svg-logo{
-    transition: transform 0.3s ease; 
-}
 
-.svg-logo:hover {
-    transform: scale(1.1);
 }
-
 
 .commend-name {
-    font-size: x-large;
+    font-size: large;
 }
 
 
 .commend-title {
-    font-size: xx-large;
+    font-size: larger;
     font-weight:500;
 }
 .commend-text {
-    font-size: xx-large;
+    font-size: large;
     border-bottom: 2px solid rgba(167, 167, 167, 0.192);
     
 }
 
 .user-name {
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgb(236, 106, 106);
     font-size: larger;
 }
 
-.user-rating{
-    font-size: xx-large;
+.user-rating {
+    font-size: large;
 }
+
 
 .commend-rating {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
-    font-size: xx-large;
+    font-size: small;
 }
 
 .pagination-component {
@@ -99,7 +90,6 @@
     width: 35%;
     
 }
-
 .filter-main {
     display: flex;
     align-items: center;
@@ -108,9 +98,7 @@
   
 }
 
-.filter-title {
-    font-size: larger;
-}
+
 
 
 
@@ -147,7 +135,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 3em;
-        padding-bottom: 50%;
+     
  
     }
 

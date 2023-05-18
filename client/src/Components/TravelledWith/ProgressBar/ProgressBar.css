@@ -1,0 +1,15 @@
+.progress-bar{
+    position: relative;
+    background-color: #ddd;
+    height: 16px;
+    width: 180px;
+    border-radius: 3px;
+}
+
+.progress{
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    height: 16px;
+    background-color: #6DA9E4;
+}
+

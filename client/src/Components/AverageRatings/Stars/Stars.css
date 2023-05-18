@@ -1,0 +1,16 @@
+.star {
+    color: #a0a0a0;
+    font-size: 24px;
+  }
+  
+  .filled {
+    color: #ff9800;
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    .star {
+      font-size: 20px;
+      flex-wrap: wrap;
+    }
+  }

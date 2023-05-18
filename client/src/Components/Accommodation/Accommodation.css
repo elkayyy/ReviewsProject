@@ -1,7 +1,6 @@
 .main-container {
     display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
+    justify-content: space-evenly;
     border-bottom: 2px solid rgba(167, 167, 167, 0.192);
 }
 
@@ -9,22 +8,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4em;
     flex-direction: row;
-    gap: 10em;
-    
+ 
+    width: 100%;
+   
 }
  
-
-.main-container-image {
-    display: flex;
- 
-}
-
 .image {
    object-fit: cover;
    object-position: center;
-   width: 65vmin;
-   height: 35vmin;
+   width: 45vmin;
+   height: 25vmin;
    padding: 1em;
 }
 

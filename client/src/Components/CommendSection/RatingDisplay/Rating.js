@@ -4,10 +4,10 @@ function RatingDisplay({ label, value }) {
 
     return (
       <div>
-      <span className="commend-item">
+      {( value !== 0 && <span className="commend-item">
         {label} ({value} / 10) 
         <Rating value={value} readOnly cancel={false} stars={10} />
-      </span>
+      </span>)}
 
       </div>
     );
