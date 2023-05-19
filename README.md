@@ -1,4 +1,4 @@
-Given by Zoover.nl
+An assignment given by (zoover.nl) displaying React, JS and NodeJs skills.
 
 ## How to use
 
