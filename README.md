@@ -1,3 +1,5 @@
+Given by Zoover.nl
+
 ## How to use
 
 - Just run `yarn install` in the root folder will install all dependencies for the client and the server as it is a monorepo
