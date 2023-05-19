@@ -5,7 +5,7 @@ import TravelledWith from '../TravelledWith/TravelledWith';
 function Accommodation() {
     return (
         <div>
-            <h1 className="first-title">Worst Accommodation ever existed. Never even think of booking!</h1>
+            <h1 className="first-title">Accommodation ratings  </h1>
             <div className="main-container">
 
                 <div className="main-container-inner">
